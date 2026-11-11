@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Systems Analyst in Cape Town, South Africa. Systems analysis, Salesforce, UAT and test leadership.">
+<link rel="canonical" href="https://valaanele.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Anele Vala">
+<meta property="og:title" content="Anele Vala · Systems Analyst">
+<meta property="og:description" content="Systems Analyst in Cape Town, South Africa. Systems analysis, Salesforce, UAT and test leadership.">
+<meta property="og:url" content="https://valaanele.github.io/">
+<meta property="og:image" content="https://valaanele.github.io/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Anele Vala, Systems Analyst, Cape Town">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#AC3A62">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23D9789D'/%3E%3Cstop offset='1' stop-color='%23A1355B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='url%28%23g%29'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial%2CHelvetica%2Csans-serif' font-weight='700' font-size='26' fill='%23fff'%3EAV%3C/text%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Anele Vala · Systems Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a small operating system over a Cape Town wallpaper (Table Mountain seen from the bay).
+   The lock screen carries the headline facts. Unlocking shows draggable windows on a laptop,
+   or a home screen of apps that open full-screen on a phone. */
+:root{
+  --ink:#14212A;--ink-2:#4D5D66;--paper:#F6F8F7;--paper-2:#EBF0EF;--line:#D1DADB;
+  --accent:#AC3A62;--accent-soft:#F6DFE7;--on-accent:#FFFFFF;
+  --pass:#246C41;--pass-soft:#DAEEE1;--run:#1C5F8C;--run-soft:#DAE8F3;
+  --glass:rgba(255,255,255,.58);--glass-strong:rgba(248,251,251,.86);--glass-line:rgba(255,255,255,.72);--note:rgba(250,252,252,.84);
+  --on-wall:#0E1C24;--on-wall-2:#273943;--halo:rgba(255,255,255,.7);--scrim:rgba(14,28,36,.16);
+  --shadow:0 24px 64px rgba(14,30,40,.26),0 2px 8px rgba(14,30,40,.12);
+  --tile-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 6px 16px rgba(10,22,30,.22);
+  --sky-top:#88B1C8;--sky-mid:#BAD1DC;--sky-low:#E5ECE4;--orb:#FFF0CF;
+  --mount-far:#9FB3BD;--mount-top:#687B86;--mount-base:#43545E;
+  --cloud:#FFFFFF;--city:#38464F;--lights:#FFE1A3;--sea-top:#487B92;--sea-bottom:#254F64;
+  --night:0;
+  
+  --tile-glyph:#FFFFFF;--tile-glyph-ink:#22323B;
+  --t-about:linear-gradient(150deg,#D9789D,#A1355B);
+  --t-experience:linear-gradient(150deg,#5A93AF,#285772);
+  --t-projects:linear-gradient(150deg,#86A274,#4B6843);
+  --t-skills:linear-gradient(150deg,#CFAE84,#93704B);
+  --t-education:linear-gradient(150deg,#6A7AA6,#33416B);
+  
+  --t-cv:linear-gradient(150deg,#FFFFFF,#D6DFE2);
+  --t-contact:linear-gradient(150deg,#4AADA8,#1F6B68);
+  --t-mail:linear-gradient(150deg,#63A9D8,#2D6B9A);
+  --t-link:linear-gradient(150deg,#778993,#43515A);
+  --f-display:"Bricolage Grotesque","Atkinson Hyperlegible Next",ui-sans-serif,system-ui,sans-serif;
+  --f-ui:"Atkinson Hyperlegible Next",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-mono:"Atkinson Hyperlegible Mono",ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --fs-label:11px;--fs-small:12.5px;--fs-ui:13.5px;--fs-body:15px;--fs-sub:18px;--fs-name:34px;
+  --r-win:14px;--r-card:12px;--menubar:30px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E6EDEF;--ink-2:#A2B1B8;--paper:#11191F;--paper-2:#18222A;--line:#283640;
+    --accent:#EE8EAD;--accent-soft:#3A1E2A;--on-accent:#1B0D13;
+    --pass:#72CE95;--pass-soft:#16301F;--run:#88C0EC;--run-soft:#152A3B;
+    --glass:rgba(12,20,26,.56);--glass-strong:rgba(15,23,29,.88);--glass-line:rgba(255,255,255,.10);--note:rgba(16,24,30,.80);
+    --on-wall:#F1F6F8;--on-wall-2:#C3D0D6;--halo:rgba(0,0,0,.55);--scrim:rgba(0,0,0,.28);
+    --shadow:0 24px 64px rgba(0,0,0,.55),0 2px 8px rgba(0,0,0,.35);
+    --tile-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 6px 16px rgba(0,0,0,.45);
+    --sky-top:#03070C;--sky-mid:#0A1520;--sky-low:#283247;--orb:#E4ECF5;
+    --mount-far:#152230;--mount-top:#101B25;--mount-base:#081016;
+    --cloud:#8A99AB;--city:#060C11;--lights:#FFC66E;--sea-top:#0A1722;--sea-bottom:#03070B;
+    --night:1;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E6EDEF;--ink-2:#A2B1B8;--paper:#11191F;--paper-2:#18222A;--line:#283640;
+  --accent:#EE8EAD;--accent-soft:#3A1E2A;--on-accent:#1B0D13;
+  --pass:#72CE95;--pass-soft:#16301F;--run:#88C0EC;--run-soft:#152A3B;
+  --glass:rgba(12,20,26,.56);--glass-strong:rgba(15,23,29,.88);--glass-line:rgba(255,255,255,.10);--note:rgba(16,24,30,.80);
+  --on-wall:#F1F6F8;--on-wall-2:#C3D0D6;--halo:rgba(0,0,0,.55);--scrim:rgba(0,0,0,.28);
+  --shadow:0 24px 64px rgba(0,0,0,.55),0 2px 8px rgba(0,0,0,.35);
+  --tile-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 6px 16px rgba(0,0,0,.45);
+  --sky-top:#03070C;--sky-mid:#0A1520;--sky-low:#283247;--orb:#E4ECF5;
+  --mount-far:#152230;--mount-top:#101B25;--mount-base:#081016;
+  --cloud:#8A99AB;--city:#060C11;--lights:#FFC66E;--sea-top:#0A1722;--sea-bottom:#03070B;
+  --night:1;color-scheme:dark;
+}
+
+html,body{height:100%}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--sky-mid);color:var(--ink);font-family:var(--f-ui);font-size:var(--fs-ui);line-height:1.45;overflow:hidden;overscroll-behavior:none;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;text-align:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+#os{position:fixed;inset:0;overflow:hidden}
+#wall{position:absolute;inset:0;width:100%;height:100%;display:block}
+.ui{transition:opacity .45s ease .12s}
+#os.locked .ui{opacity:0;visibility:hidden;transition:none}
+
+/* Icons, tiles, avatar */
+.tile{--s:56px;width:var(--s);height:var(--s);flex:none;border-radius:23%;display:grid;place-items:center;background:var(--tile-bg,var(--t-link));color:var(--tile-glyph);box-shadow:var(--tile-shadow)}
+.tile svg{width:54%;height:54%}
+svg.g{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tile-about{--tile-bg:var(--t-about)}.tile-experience{--tile-bg:var(--t-experience)}.tile-projects{--tile-bg:var(--t-projects)}
+.tile-skills{--tile-bg:var(--t-skills)}.tile-education{--tile-bg:var(--t-education)}
+.tile-cv{--tile-bg:var(--t-cv);color:var(--tile-glyph-ink)}.tile-contact{--tile-bg:var(--t-contact)}
+.tile-mail{--tile-bg:var(--t-mail)}.tile-link{--tile-bg:var(--t-link)}
+.avatar{--av:64px;width:var(--av);height:var(--av);flex:none;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:var(--t-about);color:var(--tile-glyph);font:700 calc(var(--av)*.36)/1 var(--f-display);box-shadow:0 0 0 3px var(--glass-line),var(--tile-shadow)}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--pass);box-shadow:0 0 0 3px var(--pass-soft);flex:none}
+.icon-btn{width:30px;height:30px;display:grid;place-items:center;border-radius:8px;color:inherit;flex:none}
+.icon-btn:hover{background:var(--scrim)}
+.icon-btn svg{width:17px;height:17px}
+
+/* Lock screen */
+#lock{position:absolute;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;gap:clamp(10px,2.2vh,22px);
+  padding-block:calc(env(safe-area-inset-top,0px) + 8px) calc(env(safe-area-inset-bottom,0px) + 10px);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  color:var(--on-wall);touch-action:none;user-select:none;-webkit-user-select:none;
+  transition:transform .5s cubic-bezier(.2,.8,.2,1),opacity .5s ease}
+#lock.gone{transform:translateY(-100%);opacity:0;pointer-events:none}
+.skip{position:absolute;left:50%;top:calc(env(safe-area-inset-top,0px) + 8px);transform:translate(-50%,-160%);z-index:2;padding:9px 16px;border-radius:999px;background:var(--glass-strong);color:var(--ink);border:1px solid var(--glass-line);font:600 var(--fs-ui)/1 var(--f-ui)}
+.skip:focus-visible{transform:translate(-50%,0)}
+.lock-status{width:100%;display:flex;align-items:center;justify-content:space-between;min-height:36px;font:600 var(--fs-small)/1 var(--f-ui);color:var(--on-wall-2)}
+.lock-head{text-align:center;display:grid;gap:2px;margin-top:clamp(0px,3vh,36px)}
+.lock-date{margin:0;font:600 clamp(15px,2vw,18px)/1.2 var(--f-ui)}
+.lock-clock{margin:0;font:600 clamp(84px,24vw,112px)/.92 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums;text-shadow:0 1px 26px var(--halo)}
+.lock-id{display:flex;align-items:center;gap:14px}
+.lock-name{margin:0;font:700 clamp(24px,5.4vw,30px)/1.05 var(--f-display);letter-spacing:-.01em}
+.lock-role{margin:3px 0 0;font:400 var(--fs-ui)/1.3 var(--f-ui);color:var(--on-wall-2)}
+.notes{list-style:none;margin:0;padding:0;width:100%;max-width:420px;display:grid;gap:8px}
+.note{width:100%;display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:18px;background:var(--note);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);color:var(--ink);box-shadow:0 8px 24px var(--scrim);transition:transform .15s ease}
+.note:hover{transform:translateY(-1px)}
+.note .tile{--s:38px;border-radius:24%}
+.note-main{min-width:0;flex:1;display:grid;gap:2px}
+.note-top{display:flex;justify-content:space-between;gap:8px;font:600 var(--fs-label)/1.3 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.note-title{font:700 var(--fs-ui)/1.3 var(--f-ui)}
+.note-text{font:400 var(--fs-small)/1.35 var(--f-ui);color:var(--ink-2)}
+.lock-foot{margin-top:auto;display:grid;justify-items:center;gap:10px}
+.pillbar{display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--note);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:var(--ink);font:600 var(--fs-small)/1 var(--f-ui)}
+.unlock{padding:11px 20px;font-size:var(--fs-ui)}
+.home-bar{width:134px;height:5px;border-radius:3px;background:var(--on-wall);opacity:.7}
+@media (min-width:720px){.lock-clock{font-size:clamp(108px,11vw,150px)}.home-bar{display:none}}
+@media (max-height:780px){.notes li:nth-child(4){display:none}}
+@media (max-height:690px){.notes li:nth-child(3){display:none}.lock-clock{font-size:76px}}
+
+/* Desktop: menu bar, icons, dock */
+#menubar{position:absolute;top:0;left:0;right:0;z-index:30;height:calc(var(--menubar) + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--glass-strong);border-bottom:1px solid var(--glass-line);-webkit-backdrop-filter:blur(20px) saturate(1.4);backdrop-filter:blur(20px) saturate(1.4);color:var(--ink);font:400 var(--fs-ui)/1 var(--f-ui)}
+.mb-side{display:flex;align-items:center;gap:14px;min-width:0}
+.mb-logo{width:22px;height:22px;border-radius:7px;background:var(--t-about);color:var(--tile-glyph);font:800 10px/22px var(--f-display);text-align:center}
+.mb-name{font-weight:700;white-space:nowrap}
+.mb-app{color:var(--ink-2);white-space:nowrap}
+.mb-status{display:flex;align-items:center;gap:8px;color:var(--ink-2);white-space:nowrap}
+.mb-clock{font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:980px){.mb-status{display:none}}
+#desk{position:absolute;inset:0;z-index:5}
+.desk-icons{position:absolute;top:calc(var(--menubar) + env(safe-area-inset-top,0px) + 18px);right:max(22px,env(safe-area-inset-right,0px));display:grid;gap:14px;justify-items:center}
+.desk-icon{display:grid;justify-items:center;gap:6px;width:86px;padding:8px 4px;border-radius:12px}
+.desk-icon:hover{background:var(--glass)}
+.desk-icon .tile{--s:54px}
+.lbl{font:600 var(--fs-small)/1.2 var(--f-ui);color:var(--on-wall);text-shadow:0 0 4px var(--halo),0 0 12px var(--halo);text-align:center}
+#dock{position:absolute;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:center;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 10px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));pointer-events:none}
+.dock-in{pointer-events:auto;display:flex;align-items:flex-end;gap:8px;padding:8px 10px;max-width:100%;border-radius:22px;background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(22px) saturate(1.4);backdrop-filter:blur(22px) saturate(1.4);box-shadow:0 10px 30px var(--scrim)}
+.dock-item{position:relative;display:grid;justify-items:center;gap:4px;text-decoration:none;color:var(--ink)}
+.dock-item .tile{--s:50px;transition:transform .16s cubic-bezier(.2,.8,.2,1)}
+.dock-item:hover .tile,.dock-item:focus-visible .tile{transform:translateY(-6px)}
+.tip{position:absolute;bottom:calc(100% + 12px);left:50%;transform:translateX(-50%);padding:6px 9px;border-radius:7px;background:var(--glass-strong);border:1px solid var(--glass-line);color:var(--ink);font:600 var(--fs-small)/1 var(--f-ui);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .12s}
+.dock-item:hover .tip,.dock-item:focus-visible .tip{opacity:1}
+.dock-item::after{content:"";position:absolute;bottom:-6px;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--ink);opacity:0}
+.dock-item.open::after{opacity:.7}
+.dock-sep{width:1px;align-self:stretch;margin:4px 2px;background:var(--scrim)}
+
+/* Phone home screen */
+#home{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:calc(env(safe-area-inset-bottom,0px) + 112px)}
+.home-status{flex:none;display:flex;align-items:center;gap:10px;height:44px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px));color:var(--on-wall);font:700 15px/1 var(--f-ui)}
+.home-status .home-place{flex:1;font-weight:600;font-size:var(--fs-small);color:var(--on-wall-2)}
+.home-in{flex:1;min-height:0;overflow:auto;padding-top:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.home-col{max-width:460px;margin:0 auto;display:grid;gap:24px}
+.widget{width:100%;display:flex;align-items:center;gap:14px;padding:14px;border-radius:22px;background:var(--note);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);color:var(--ink);box-shadow:0 8px 24px var(--scrim)}
+.w-text{display:grid;gap:3px;min-width:0}
+.w-name{font:700 20px/1.1 var(--f-display)}
+.w-role{font-size:var(--fs-small);color:var(--ink-2)}
+.w-status{display:flex;align-items:center;gap:7px;margin-top:5px;font:600 var(--fs-label)/1 var(--f-ui);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2)}
+.grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 6px}
+.app{width:100%;display:grid;justify-items:center;gap:7px;min-width:0}
+.app .tile{--s:min(62px,17vw)}
+.app .lbl{font-size:12px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Windows */
+#windows{position:absolute;inset:0;z-index:20;pointer-events:none}
+.win{pointer-events:auto;position:absolute;display:flex;flex-direction:column;max-width:calc(100% - 24px);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:var(--r-win);box-shadow:var(--shadow);overflow:hidden}
+.win.opening{animation:winIn .2s cubic-bezier(.2,.8,.2,1)}
+.win.closing{animation:winOut .14s ease forwards}
+@keyframes winIn{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes winOut{to{opacity:0;transform:translateY(6px) scale(.98)}}
+.win-bar{flex:none;display:flex;align-items:center;gap:10px;height:42px;padding:0 8px 0 12px;background:var(--paper-2);border-bottom:1px solid var(--line);cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.win-bar .tile{--s:20px;border-radius:6px;box-shadow:none}
+.win-title{flex:1;min-width:0;margin:0;font:700 var(--fs-ui)/1 var(--f-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.win-title:focus{outline:none}
+.win:not(.front) .win-title{color:var(--ink-2)}
+.win-back{display:none}
+.win-ctrl{display:flex;gap:2px}
+.win-ctrl button{width:30px;height:30px;display:grid;place-items:center;border-radius:8px;color:var(--ink-2)}
+.win-ctrl button:hover{background:var(--line);color:var(--ink)}
+.win-ctrl .close:hover{background:var(--accent);color:var(--on-accent)}
+.win-ctrl svg{width:15px;height:15px}
+.win-body{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;container-type:inline-size}
+
+
+/* Window content */
+.pane{padding:22px 24px 26px;display:grid;gap:18px;align-content:start}
+.lede{margin:0;color:var(--ink-2);font-size:var(--fs-body);max-width:62ch}
+.prose{display:grid;gap:12px;max-width:62ch}
+.prose p{margin:0;font-size:var(--fs-body);line-height:1.6}
+h3,h4{text-wrap:balance}
+.sec{margin:4px 0 0;font:700 var(--fs-label)/1.2 var(--f-ui);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.about-head{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.about-head h3{margin:0;font:700 var(--fs-name)/1 var(--f-display);letter-spacing:-.015em}
+.meta{margin:5px 0 0;color:var(--ink-2)}
+.status-line{display:flex;align-items:center;gap:8px;margin:10px 0 0;font-size:var(--fs-small)}
+.kv{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 18px;margin:0;padding:14px 16px;border-radius:var(--r-card);background:var(--paper-2);border:1px solid var(--line)}
+.kv dt{color:var(--ink-2);font-size:var(--fs-small);padding-top:1px}
+.kv dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+@container (max-width:430px){.kv{grid-template-columns:minmax(0,1fr);gap:2px}.kv dd{margin-bottom:8px}}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:600 var(--fs-ui)/1 var(--f-ui);text-decoration:none;white-space:nowrap}
+.btn:hover{border-color:var(--ink-2)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.small{height:30px;padding:0 12px;font-size:var(--fs-small)}
+.btn svg{width:15px;height:15px}
+.timeline{list-style:none;margin:0;padding:0}
+.role{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;padding:18px 8px;margin:0 -8px;border-top:1px solid var(--line);scroll-margin-top:10px}
+.role:first-child{border-top:0;padding-top:4px}
+@container (min-width:560px){.role{grid-template-columns:150px minmax(0,1fr);gap:20px}}
+.role-when{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;font:400 var(--fs-small)/1.3 var(--f-mono);color:var(--ink-2)}
+@container (min-width:560px){.role-when{flex-direction:column;align-items:flex-start}}
+.tenure{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--paper-2);border:1px solid var(--line);color:var(--ink);font:600 var(--fs-label)/1.5 var(--f-mono)}
+.tenure.now{background:var(--pass-soft);border-color:transparent;color:var(--pass)}
+.role h3{margin:0;font:700 var(--fs-sub)/1.2 var(--f-display)}
+.org{margin:2px 0 0;color:var(--ink-2)}
+.role-sum{margin:8px 0 0;font-size:var(--fs-body);line-height:1.55;max-width:62ch}
+.bullets{margin:8px 0 0;padding-left:1.1em;display:grid;gap:5px;max-width:64ch}
+.bullets li{line-height:1.5}
+.bullets li::marker{color:var(--accent)}
+.role.flash{animation:flash 1.6s ease}
+@keyframes flash{0%,45%{background:var(--accent-soft)}100%{background:transparent}}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:12px 24px;padding:16px 18px 18px;border-radius:var(--r-card);background:var(--paper-2);border:1px solid var(--line)}
+@container (min-width:620px){.card{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}}
+.card-main,.card-side{display:grid;gap:10px;align-content:start;min-width:0}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card h3{margin:0;font:700 var(--fs-sub)/1.2 var(--f-display)}
+.card p{margin:0;line-height:1.55}
+.card .bullets{margin:0}
+.pill{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 9px;border-radius:999px;font:700 var(--fs-label)/1 var(--f-ui);letter-spacing:.05em;text-transform:uppercase}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.pill.done{background:var(--pass-soft);color:var(--pass)}
+.pill.run{background:var(--run-soft);color:var(--run)}
+.year{color:var(--ink-2);font-size:var(--fs-small)}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;min-height:26px;padding:3px 10px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font:600 var(--fs-small)/1.2 var(--f-ui)}
+.sg-wrap{display:grid;gap:18px}
+@container (min-width:600px){.sg-wrap{grid-template-columns:1fr 1fr;gap:20px 24px}}
+.sg{display:grid;gap:8px;align-content:start}
+.sg .chip{background:var(--paper-2)}
+.edu{list-style:none;margin:0;padding:0}
+.edu li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.edu li:first-child{border-top:0;padding-top:4px}
+.edu .yr{font:600 var(--fs-small)/1.6 var(--f-mono);color:var(--ink-2)}
+.edu-what{margin:0;font-weight:700;font-size:var(--fs-body)}
+.contact-card{display:flex;align-items:center;gap:14px}
+.contact-card h3{margin:0;font:700 24px/1.1 var(--f-display)}
+.c-rows{border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden}
+.c-row{display:grid;grid-template-columns:86px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;background:var(--paper-2);border-top:1px solid var(--line)}
+.c-row:first-child{border-top:0}
+.c-label{color:var(--ink-2);font-size:var(--fs-small)}
+.c-val{font-weight:700;overflow-wrap:anywhere;user-select:text;-webkit-user-select:text}
+a.c-val{color:var(--accent)}
+@container (max-width:420px){.c-row{grid-template-columns:minmax(0,1fr) auto}.c-label{grid-column:1/-1}}
+.fine{margin:0;color:var(--ink-2);font-size:var(--fs-small)}
+
+
+
+/* CV document */
+.cv-wrap{padding:24px;background:var(--paper-2);min-height:100%}
+.cv{max-width:700px;margin:0 auto;display:grid;gap:22px;padding:36px 40px 40px;background:var(--paper);border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 3px var(--scrim)}
+@container (max-width:600px){.cv-wrap{padding:0}.cv{border:0;border-radius:0;box-shadow:none;padding:20px 18px 32px}}
+.cv-head h3{margin:0;font:700 32px/1 var(--f-display);letter-spacing:-.015em}
+.cv-head p{margin:6px 0 0;color:var(--ink-2)}
+.cv-contact{display:flex;flex-wrap:wrap;gap:4px 10px}
+.cv-contact a{color:var(--accent)}
+.cv section{display:grid;gap:10px}
+.cv h4{margin:0;padding-bottom:6px;border-bottom:1px solid var(--line);font:700 var(--fs-label)/1.2 var(--f-ui);letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+.cv h5{margin:6px 0 0;font:700 var(--fs-small)/1.2 var(--f-ui);color:var(--ink-2)}
+.cv p{margin:0;line-height:1.55}
+.cv-role{display:grid;gap:2px}
+.cv-role + .cv-role{margin-top:10px}
+.cv-top{display:flex;justify-content:space-between;align-items:baseline;gap:4px 14px;flex-wrap:wrap}
+.cv-top strong{font-size:var(--fs-body)}
+.cv-top .mono{font-size:var(--fs-small);color:var(--ink-2);white-space:nowrap}
+.cv-org{color:var(--ink-2)}
+.cv .bullets{margin-top:6px}
+
+/* Toast */
+#toast{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 110px);transform:translate(-50%,8px);z-index:60;max-width:calc(100% - 32px);padding:10px 16px;border-radius:999px;background:var(--glass-strong);color:var(--ink);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);font:600 var(--fs-ui)/1.2 var(--f-ui);box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* Phone mode */
+@media (max-width:719.98px){
+  .desk-only{display:none!important}
+  #windows{z-index:45}
+  .win{position:fixed;inset:0;left:0!important;top:0!important;width:auto!important;height:auto!important;max-width:none;max-height:none!important;border:0;border-radius:0;box-shadow:none;padding-top:env(safe-area-inset-top,0px)}
+  .win.opening{animation:sheetIn .28s cubic-bezier(.2,.8,.2,1)}
+  .win.closing{animation:sheetOut .2s ease forwards}
+  .win-bar{display:grid;grid-template-columns:1fr auto 1fr;height:52px;cursor:default;padding-left:max(6px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));background:var(--paper)}
+  .win-bar::after{content:""}
+  .win-bar .tile,.win-ctrl{display:none}
+  .win-back{display:inline-flex;justify-self:start;align-items:center;gap:2px;height:40px;padding:0 10px 0 4px;border-radius:10px;font:600 var(--fs-body)/1 var(--f-ui);color:var(--accent)}
+  .win-back svg{width:20px;height:20px}
+  .win-title{font-size:var(--fs-body);text-align:center}
+  .win-body{padding-bottom:env(safe-area-inset-bottom,0px)}
+  .pane{padding:18px max(16px,env(safe-area-inset-right,0px)) 28px max(16px,env(safe-area-inset-left,0px))}
+  .dock-in{width:100%;max-width:420px;justify-content:space-around;padding:10px 8px 8px;border-radius:28px}
+  .dock-item .tile{--s:54px}
+  .dock-item:hover .tile{transform:none}
+  .tip{position:static;transform:none;opacity:1;padding:0;background:none;border:0;font-size:11px}
+  .dock-item::after{display:none}
+}
+@keyframes sheetIn{from{transform:translateY(100%)}to{transform:none}}
+@keyframes sheetOut{to{transform:translateY(100%)}}
+@media (min-width:720px){.phone-only{display:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<!-- CV CONTENT: everything the site says comes from this JSON block. Edit only this block, keep it valid JSON, then republish to the same link. Rules: the CV site rules note in the Anele Resume project. -->
+<script type="application/json" id="cv-data">
+{
+  "_note": "All CV content for the site. Edit only this block and keep it valid JSON. Dates use YYYY-MM; \"end\": null marks the current role. Project status is \"In progress\" or \"Delivered\". Highlights are the lock-screen notes; \"open\" names the app each one opens. Follow the CV site rules note in the Anele Resume project before publishing.",
+  "lastUpdated": "2026-10-26",
+  "person": {
+    "name": "Anele Vala",
+    "initials": "AV",
+    "title": "Systems Analyst",
+    "location": "Cape Town, South Africa",
+    "city": "Cape Town",
+    "timezone": "Africa/Johannesburg",
+    "timezoneShort": "SAST",
+    "timezoneLabel": "SAST, UTC+2",
+    "email": "valaanele@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/anele-vala-a7243355",
+    "linkedinLabel": "linkedin.com/in/anele-vala-a7243355",
+    "photo": "",
+    "strengths": "Systems analysis, Salesforce, UAT and test leadership",
+    "qualification": "BCom (Hons) Management in Information Systems, UCT",
+    "referencesNote": "References available on request."
+  },
+  "highlights": [
+    {
+      "open": "experience",
+      "scroll": "role-jgf",
+      "label": "Experience",
+      "when": "Now",
+      "title": "Systems Analyst at Jakes Gerwel Fellowship",
+      "text": "Leading the move to Salesforce Nonprofit Cloud."
+    },
+    {
+      "open": "about",
+      "label": "About",
+      "when": "2015–2025",
+      "title": "Ten years in education technology",
+      "text": "From building courses at GetSmarter to leading UAT at 2U."
+    }
+  ],
+  "about": [
+    "I’m a systems analyst in Cape Town. I help organisations get more from the systems they rely on, including Salesforce, Microsoft 365, SharePoint, Asana and learning platforms. I map how work really flows, tidy up the data underneath it, and test changes properly before people depend on them.",
+    "I spent ten years in education technology at GetSmarter and 2U, and each role brought me closer to the systems. I started by building online courses, moved into learning technology and business analysis, then tested the online campus, and went on to lead user acceptance testing as Test Lead.",
+    "I’m now the Systems Analyst at the Jakes Gerwel Fellowship, where I’m leading the move to Salesforce Nonprofit Cloud and testing it with an automated UAT suite I built in Playwright."
+  ],
+  "cvProfile": "Systems analyst with experience across systems and business analysis, Salesforce administration, platform integration, learning management systems and user acceptance testing. I have led testing programmes from test plans and UAT criteria through to coordinating global teams in structured, risk-aware testing. I care about reliable platforms and the people who use them, and I work through collaboration, clear documentation and Agile delivery, mostly in education and mission-driven organisations.",
+  "roles": [
+    {
+      "id": "jgf",
+      "title": "Systems Analyst",
+      "org": "Jakes Gerwel Fellowship",
+      "short": "Jakes Gerwel Fellowship",
+      "place": "Cape Town",
+      "start": "2026-01",
+      "end": null,
+      "summary": "Manage, improve and integrate the organisation’s systems: Salesforce, Microsoft 365, SharePoint, Asana, Slack and learning platforms.",
+      "points": [
+        "Leading the move from Salesforce Education Data Architecture (EDA) to Nonprofit Cloud with an external implementation partner, from data audit and field mapping through to user acceptance testing.",
+        "Built an automated UAT suite in Playwright and Node.js that checks 22 user stories against the requirements documentation and reports the results in HTML for stakeholders.",
+        "Running an organisation-wide systems assessment made up of a staff discovery survey, an as-is systems report and a prioritised improvement roadmap for 2027.",
+        "Wrote standard operating procedures for all 22 applications in the organisation’s application register.",
+        "Act as vendor liaison for Salesforce and other platforms, monitor SLAs, and support onboarding, training and change management.",
+        "Work with the BI and M&E teams to keep data flows and reporting aligned, and introduce AI-enabled tools where they improve automation and reporting."
+      ]
+    },
+    {
+      "id": "apex",
+      "title": "IT Administrator",
+      "org": "Apex Education Group",
+      "short": "Apex Education Group",
+      "start": "2025-11",
+      "end": "2025-12",
+      "points": []
+    },
+    {
+      "id": "testlead",
+      "title": "Test Lead (UAT)",
+      "org": "2U / LearningMate Solutions",
+      "short": "2U / LearningMate",
+      "place": "Cape Town",
+      "start": "2023-04",
+      "end": "2025-08",
+      "points": [
+        "Designed and led the UAT framework for large-scale digital learning platforms.",
+        "Turned business and system requirements into UAT strategies, test plans and test cases.",
+        "Facilitated UAT with cross-functional stakeholders across the SDLC, and documented risks, workarounds and acceptance decisions.",
+        "Ran functional, integration, regression and performance testing, and managed defects through to resolution.",
+        "Checked compatibility across the LMS and its third-party integrations.",
+        "Mentored and supervised junior testers."
+      ]
+    },
+    {
+      "id": "tester",
+      "title": "Tester Technician (UAT)",
+      "org": "2U",
+      "short": "2U",
+      "place": "Cape Town",
+      "start": "2020-01",
+      "end": "2023-03",
+      "points": [
+        "Set and verified testing criteria for the online campus.",
+        "Wrote and ran test cases, test scripts and test data for enhancement and maintenance work.",
+        "Logged, tracked and verified defects through to resolution.",
+        "Worked with developers and business analysts to pin down requirements and expected outcomes.",
+        "Fed user-experience findings back into improvements to the platform."
+      ]
+    },
+    {
+      "id": "lts",
+      "title": "Learning Technology Specialist",
+      "org": "GetSmarter / 2U",
+      "short": "GetSmarter / 2U",
+      "place": "Cape Town",
+      "start": "2017-04",
+      "end": "2019-12",
+      "points": [
+        "Combined business systems analysis, instructional design and UX to improve e-learning platforms.",
+        "Captured requirements in functional specifications, flowcharts and wireframes, and ran the workshops behind them.",
+        "Wrote system manuals, user guides and FAQs for end users.",
+        "Helped business units develop and strengthen business cases.",
+        "Supported implementation, testing and change management for new tools."
+      ]
+    },
+    {
+      "id": "lta",
+      "title": "Learning Technology Administrator",
+      "org": "GetSmarter",
+      "short": "GetSmarter",
+      "start": "2015-10",
+      "end": "2017-03",
+      "points": [
+        "Built online courses and quality-checked the course-building portfolio.",
+        "Uploaded, tested and maintained course content on LMS platforms.",
+        "Supported instructors and learners with technical issues.",
+        "Kept courses in line with accessibility and branding standards."
+      ]
+    },
+    {
+      "id": "intec",
+      "title": "Tutor Administrator",
+      "org": "Intec College Head Office",
+      "short": "Intec College",
+      "start": "2014-10",
+      "end": "2015-09",
+      "points": [
+        "Allocated and tracked tutor assignments, and kept schedules and student-progress records up to date.",
+        "Coordinated tutor training, inductions and meetings."
+      ]
+    }
+  ],
+  "projectsIntro": "Recent work at the Jakes Gerwel Fellowship.",
+  "projects": [
+    {
+      "title": "Salesforce Nonprofit Cloud migration",
+      "year": "2026",
+      "status": "In progress",
+      "summary": "Moving a teacher-development organisation’s Salesforce from Education Data Architecture (EDA) to Nonprofit Cloud, together with an external implementation partner.",
+      "points": [
+        "A Phase 1 data audit across 12 objects that flagged the data-quality fixes needed before migration.",
+        "A field-mapping workbook from EDA to Nonprofit Cloud covering about 30 objects.",
+        "A 31-page guide to Nonprofit Cloud’s native objects for the team.",
+        "SOQL data operations in Salesforce Inspector Reloaded, including record matching and bulk inserts."
+      ],
+      "tools": [
+        "Salesforce Nonprofit Cloud",
+        "EDA",
+        "SOQL",
+        "Inspector Reloaded",
+        "Excel"
+      ]
+    },
+    {
+      "title": "Automated UAT suite",
+      "year": "2026",
+      "status": "Delivered",
+      "summary": "A Playwright and Node.js suite that tests the new Salesforce org against the requirements documentation, one user story at a time.",
+      "points": [
+        "Covers 22 in-scope user stories, with every check traced to its acceptance criteria.",
+        "Blocked and warning results, added to cut false failures.",
+        "HTML reports that stakeholders can read without touching the code.",
+        "More than 20 versions as the build and requirements changed."
+      ],
+      "tools": [
+        "Playwright",
+        "Node.js",
+        "JavaScript",
+        "Salesforce"
+      ]
+    },
+    {
+      "title": "Systems assessment and 2027 roadmap",
+      "year": "2026",
+      "status": "In progress",
+      "summary": "An as-is review of the tools, systems and workflows staff rely on every day, to find where the organisation can work more productively.",
+      "points": [
+        "An organisation-wide discovery survey.",
+        "An as-is systems report.",
+        "A prioritised systems improvement roadmap for 2027."
+      ],
+      "tools": [
+        "Discovery survey",
+        "As-is analysis",
+        "Roadmapping"
+      ]
+    },
+    {
+      "title": "SOP library",
+      "year": "2026",
+      "status": "Delivered",
+      "summary": "Standard operating procedures for every application in the organisation’s 2026 application register.",
+      "points": [
+        "22 SOPs, one per application.",
+        "Built from a single shared template in Asana."
+      ],
+      "tools": [
+        "Asana",
+        "Documentation",
+        "Governance"
+      ]
+    },
+    {
+      "title": "Form data recovery",
+      "year": "2026",
+      "status": "Delivered",
+      "summary": "Found why participant form answers were not reaching Salesforce fields, and designed the fix.",
+      "points": [
+        "Traced answers that were being stored in JSON attachments instead of fields.",
+        "Designed a custom-object mapping and a recovery approach for the affected data.",
+        "Built personalised, Salesforce-linked form links for 242 programme participants."
+      ],
+      "tools": [
+        "Salesforce",
+        "3B Forms",
+        "JSON",
+        "Excel"
+      ]
+    },
+    {
+      "title": "Event systems for a hybrid summit",
+      "year": "2026",
+      "status": "Delivered",
+      "summary": "The operational systems behind a hybrid summit and online sessions for teachers.",
+      "points": [
+        "A 156-task Asana project plan.",
+        "A Zoom Events testing guide.",
+        "A joining guide for teachers on phones and tablets, backed by a browser test log."
+      ],
+      "tools": [
+        "Asana",
+        "Zoom Events",
+        "Zoom"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "group": "Systems and business analysis",
+      "items": [
+        "Requirements gathering",
+        "Functional specifications",
+        "Workflow mapping (BPMN)",
+        "Process improvement",
+        "SOPs and governance",
+        "Change management",
+        "Vendor and stakeholder management"
+      ]
+    },
+    {
+      "group": "Salesforce",
+      "items": [
+        "Administration",
+        "Nonprofit Cloud",
+        "Education Data Architecture",
+        "SOQL",
+        "Data migration",
+        "Data quality audits",
+        "Inspector Reloaded"
+      ]
+    },
+    {
+      "group": "Testing and quality",
+      "items": [
+        "UAT strategy and facilitation",
+        "Test plans and test cases",
+        "Functional and integration testing",
+        "Regression testing",
+        "Performance testing",
+        "Defect management",
+        "Jira",
+        "Swagger UI"
+      ]
+    },
+    {
+      "group": "Automation and data",
+      "items": [
+        "Playwright",
+        "Node.js",
+        "Python (openpyxl)",
+        "SQL",
+        "Excel",
+        "Selenium",
+        "Tableau"
+      ]
+    },
+    {
+      "group": "Platforms",
+      "items": [
+        "Microsoft 365",
+        "SharePoint",
+        "Asana",
+        "Slack",
+        "Zoom and Zoom Events",
+        "Moodle",
+        "Open edX",
+        "Canvas",
+        "Blackboard"
+      ]
+    },
+    {
+      "group": "Ways of working",
+      "items": [
+        "Agile (Scrum, Kanban)",
+        "SDLC",
+        "Waterfall",
+        "Accessibility standards",
+        "Documentation"
+      ]
+    }
+  ],
+  "qualifications": [
+    {
+      "what": "BCom (Hons) Management in Information Systems",
+      "where": "University of Cape Town",
+      "year": "2021",
+      "note": "Specialisation: Business and Systems Analysis"
+    },
+    {
+      "what": "National Diploma: Sport Management",
+      "where": "Cape Peninsula University of Technology",
+      "year": "2012"
+    },
+    {
+      "what": "National Senior Certificate",
+      "where": "J.A. Calata Senior Secondary School",
+      "year": "2008"
+    }
+  ],
+  "certifications": [
+    {
+      "what": "Programming for Data Science with Python",
+      "where": "Udacity",
+      "year": "2019"
+    },
+    {
+      "what": "Business Systems Analysis",
+      "where": "University of Cape Town",
+      "year": "2016"
+    },
+    {
+      "what": "IT Management",
+      "where": "University of Cape Town",
+      "year": "2016"
+    }
+  ]
+}
+</script>
+<div id="os" class="locked">
+  <canvas id="wall" aria-hidden="true"></canvas>
+
+  <header id="menubar" class="ui desk-only">
+    <div class="mb-side">
+      <button type="button" class="mb-logo" data-act="lock" aria-label="Lock screen" data-bind="initials"></button>
+      <span class="mb-name" data-bind="name"></span>
+      <span class="mb-app" id="mb-app">Desktop</span>
+    </div>
+    <div class="mb-side">
+      <span class="mb-status"><span class="dot"></span>All systems operational</span>
+      <button type="button" class="icon-btn theme-btn" data-act="theme" aria-label="Switch theme"></button>
+      <span class="mb-clock" data-bar>Cape Town</span>
+    </div>
+  </header>
+
+  <main id="desk" class="ui desk-only" aria-label="Desktop">
+    <div class="desk-icons">
+      <button type="button" class="desk-icon" data-open="cv"><span class="tile tile-cv" data-icon="cv"></span><span class="lbl">CV</span></button>
+      <button type="button" class="desk-icon" data-open="projects"><span class="tile tile-projects" data-icon="projects"></span><span class="lbl">Projects</span></button>
+    </div>
+  </main>
+
+  <main id="home" class="ui phone-only" aria-label="Home screen">
+    <div class="home-status">
+      <span data-clock>--:--</span>
+      <span class="home-place" data-bind="city"></span>
+      <button type="button" class="icon-btn theme-btn" data-act="theme" aria-label="Switch theme"></button>
+    </div>
+    <div class="home-in">
+      <div class="home-col">
+        <button type="button" class="widget" data-open="about">
+          <span class="avatar" style="--av:58px" data-avatar aria-hidden="true"></span>
+          <span class="w-text">
+            <span class="w-name" data-bind="name"></span>
+            <span class="w-role" data-bind="roleAtOrg"></span>
+            <span class="w-status"><span class="dot"></span>All systems operational</span>
+          </span>
+        </button>
+        <ul class="grid">
+          <li><button type="button" class="app" data-open="about"><span class="tile tile-about" data-icon="about"></span><span class="lbl">About</span></button></li>
+          <li><button type="button" class="app" data-open="experience"><span class="tile tile-experience" data-icon="experience"></span><span class="lbl">Experience</span></button></li>
+          <li><button type="button" class="app" data-open="projects"><span class="tile tile-projects" data-icon="projects"></span><span class="lbl">Projects</span></button></li>
+          <li><button type="button" class="app" data-open="skills"><span class="tile tile-skills" data-icon="skills"></span><span class="lbl">Skills</span></button></li>
+          <li><button type="button" class="app" data-open="education"><span class="tile tile-education" data-icon="education"></span><span class="lbl">Education</span></button></li>
+          
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <div id="windows" class="ui"></div>
+
+  <nav id="dock" class="ui" aria-label="Dock">
+    <div class="dock-in">
+      <button type="button" class="dock-item desk-only" data-open="about" aria-label="About"><span class="tile tile-about" data-icon="about"></span><span class="tip" aria-hidden="true">About</span></button>
+      <button type="button" class="dock-item desk-only" data-open="experience" aria-label="Experience"><span class="tile tile-experience" data-icon="experience"></span><span class="tip" aria-hidden="true">Experience</span></button>
+      <button type="button" class="dock-item desk-only" data-open="projects" aria-label="Projects"><span class="tile tile-projects" data-icon="projects"></span><span class="tip" aria-hidden="true">Projects</span></button>
+      <button type="button" class="dock-item desk-only" data-open="skills" aria-label="Skills"><span class="tile tile-skills" data-icon="skills"></span><span class="tip" aria-hidden="true">Skills</span></button>
+      <button type="button" class="dock-item desk-only" data-open="education" aria-label="Education"><span class="tile tile-education" data-icon="education"></span><span class="tip" aria-hidden="true">Education</span></button>
+      
+      <button type="button" class="dock-item" data-open="cv" aria-label="CV"><span class="tile tile-cv" data-icon="cv"></span><span class="tip" aria-hidden="true">CV</span></button>
+      <button type="button" class="dock-item" data-open="contact" aria-label="Contact"><span class="tile tile-contact" data-icon="contact"></span><span class="tip" aria-hidden="true">Contact</span></button>
+      <span class="dock-sep desk-only" aria-hidden="true"></span>
+      <a class="dock-item" data-link="linkedin" href="https://www.linkedin.com/in/anele-vala-a7243355" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile, opens in a new tab"><span class="tile tile-link" data-icon="link"></span><span class="tip" aria-hidden="true">LinkedIn</span></a>
+      <button type="button" class="dock-item" data-act="copy-email" aria-label="Copy email address"><span class="tile tile-mail" data-icon="mail"></span><span class="tip" aria-hidden="true">Email</span></button>
+    </div>
+  </nav>
+
+  <section id="lock" aria-label="Lock screen">
+    <button type="button" class="skip" data-open="cv">Skip to the full CV</button>
+    <div class="lock-status">
+      <span data-bind="cityTz"></span>
+      <button type="button" class="icon-btn theme-btn" data-act="theme" aria-label="Switch theme"></button>
+    </div>
+    <div class="lock-head">
+      <p class="lock-date" data-date>Cape Town</p>
+      <p class="lock-clock" data-clock>--:--</p>
+    </div>
+    <div class="lock-id">
+      <span class="avatar" style="--av:56px" data-avatar aria-hidden="true"></span>
+      <div>
+        <h1 class="lock-name" data-bind="name"></h1>
+        <p class="lock-role" data-bind="titleCity"></p>
+      </div>
+    </div>
+    <ul class="notes" aria-label="Highlights" id="lock-notes"></ul>
+    <div class="lock-foot">
+      <p class="pillbar" style="margin:0"><span class="dot"></span>All systems operational</p>
+      <button type="button" class="pillbar unlock" id="unlock" data-act="unlock"><span class="phone-only">Swipe up to open</span><span class="desk-only">Click anywhere to open</span></button>
+      <span class="home-bar" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+</div>
+<script>
+(() => {
+'use strict';
+
+/* ---------- Content ----------
+   Everything the site says comes from the cv-data block near the top of the page.
+   To update the CV, edit that block only. */
+const DATA = JSON.parse(document.getElementById('cv-data').textContent);
+const P = DATA.person;
+const TZ = P.timezone || 'Africa/Johannesburg';
+const EMAIL = P.email;
+const LINKEDIN = P.linkedin;
+const LINKEDIN_LABEL = P.linkedinLabel;
+const PHOTO = P.photo || '';
+const toYM = s => (s ? String(s).split('-').map(Number) : null);
+const ROLES = DATA.roles.map(r => Object.assign({}, r, { start: toYM(r.start), end: toYM(r.end), points: r.points || [] }));
+const PROJECTS = DATA.projects.map(p => Object.assign({}, p, { done: /^delivered$/i.test(p.status || ''), points: p.points || [], tools: p.tools || [] }));
+const SKILLS = DATA.skills || [];
+const EDU = DATA.qualifications || [];
+const CERTS = DATA.certifications || [];
+const ABOUT = DATA.about || [];
+const CV_PROFILE = DATA.cvProfile || '';
+const MON_LONG = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const currentRole = () => ROLES.find(r => !r.end) || null;
+function statusLine() {
+  const cur = currentRole();
+  return cur ? `${cur.title} at ${cur.org} since ${MON_LONG[cur.start[1] - 1]} ${cur.start[0]}` : P.title;
+}
+
+
+
+/* ---------- Helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const phoneMQ = matchMedia('(max-width: 719.98px)');
+const reduceMQ = matchMedia('(prefers-reduced-motion: reduce)');
+const isPhone = () => phoneMQ.matches;
+const motion = () => !reduceMQ.matches;
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function nowYM() {
+  const p = new Intl.DateTimeFormat('en-GB', { year:'numeric', month:'numeric', timeZone:TZ }).formatToParts(new Date());
+  return [ +p.find(x => x.type === 'year').value, +p.find(x => x.type === 'month').value ];
+}
+const months = (a, b) => (b[0] * 12 + b[1]) - (a[0] * 12 + a[1]) + 1;
+const roleMonths = r => months(r.start, r.end || nowYM());
+const totalMonths = () => ROLES.reduce((s, r) => s + roleMonths(r), 0);
+function tenure(m) { const y = Math.floor(m / 12), r = m % 12; return [y ? y + 'y' : '', r ? r + 'm' : ''].filter(Boolean).join(' ') || '1m'; }
+function tenureLong(m) { const y = Math.floor(m / 12), r = m % 12; const parts = []; if (y) parts.push(y + (y === 1 ? ' year' : ' years')); if (r) parts.push(r + (r === 1 ? ' month' : ' months')); return parts.join(', '); }
+const ym = a => MON[a[1] - 1] + ' ' + a[0];
+const range = r => ym(r.start) + ' – ' + (r.end ? ym(r.end) : 'Present');
+
+const ICON = {
+  about:'<circle cx="12" cy="8.6" r="3.6"/><path d="M4.8 19.5c1.3-3.6 4-5.5 7.2-5.5s5.9 1.9 7.2 5.5"/>',
+  experience:'<rect x="3.5" y="7.5" width="17" height="12.5" rx="2.6"/><path d="M8.8 7.5V6.2A2.2 2.2 0 0 1 11 4h2a2.2 2.2 0 0 1 2.2 2.2v1.3M3.5 12.8h17M10.5 12.8v1.8h3v-1.8"/>',
+  projects:'<path d="M3.5 8a2.2 2.2 0 0 1 2.2-2.2h4.1l2 2.1h6.5a2.2 2.2 0 0 1 2.2 2.2v7.7a2.2 2.2 0 0 1-2.2 2.2H5.7a2.2 2.2 0 0 1-2.2-2.2z"/><path d="M3.5 11h17"/>',
+  skills:'<path d="M4.5 6.5h8.5M17.5 6.5h2M4.5 12h2.5M11.5 12h8M4.5 17.5h10M19 17.5h.5"/><circle cx="15.2" cy="6.5" r="2.2"/><circle cx="9.2" cy="12" r="2.2"/><circle cx="16.8" cy="17.5" r="2.2"/>',
+  education:'<path d="M2.8 9.6 12 5.2l9.2 4.4L12 14z"/><path d="M6.8 11.6v4.2c1.4 1.5 3.3 2.4 5.2 2.4s3.8-.9 5.2-2.4v-4.2M21.2 9.6v5.2"/>',
+  
+  cv:'<path d="M7.2 3.5h6.9l4.4 4.4v11.2a1.6 1.6 0 0 1-1.6 1.6H7.2a1.6 1.6 0 0 1-1.6-1.6V5.1a1.6 1.6 0 0 1 1.6-1.6z"/><path d="M14 3.7v4.4h4.3M8.8 12.2h6.6M8.8 15.6h6.6"/>',
+  contact:'<rect x="3" y="5.5" width="18" height="13" rx="2.6"/><circle cx="9" cy="11" r="2.2"/><path d="M5.8 16c.6-1.6 1.8-2.4 3.2-2.4s2.6.8 3.2 2.4M14.5 10h4M14.5 13.5h3"/>',
+  mail:'<rect x="3.5" y="5.5" width="17" height="13" rx="2.6"/><path d="m4.6 7.2 7.4 5.9 7.4-5.9"/>',
+  link:'<path d="M10.2 13.8a3.9 3.9 0 0 0 5.6.1l2.9-2.9a3.9 3.9 0 0 0-5.5-5.5l-1.1 1.1"/><path d="M13.8 10.2a3.9 3.9 0 0 0-5.6-.1l-2.9 2.9a3.9 3.9 0 0 0 5.5 5.5l1.1-1.1"/>',
+  copy:'<rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.2a1.7 1.7 0 0 0-1.7-1.7H6.2a1.7 1.7 0 0 0-1.7 1.7v7.6a1.7 1.7 0 0 0 1.7 1.7h2.3"/>',
+  arrow:'<path d="M7 17 17 7M9 7h8v8"/>',
+  sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2.8v2M12 19.2v2M2.8 12h2M19.2 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M5.5 18.5l1.4-1.4M17.1 6.9l1.4-1.4"/>',
+  moon:'<path d="M19.5 14.6A7.8 7.8 0 1 1 9.4 4.5a6.3 6.3 0 0 0 10.1 10.1z"/>',
+  close:'<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>',
+  max:'<rect x="5" y="5" width="14" height="14" rx="2.2"/>',
+  back:'<path d="M14.5 5.5 8 12l6.5 6.5"/>'
+};
+const svg = name => `<svg class="g" viewBox="0 0 24 24" aria-hidden="true" focusable="false">${ICON[name]}</svg>`;
+const tile = name => `<span class="tile tile-${name}">${svg(name)}</span>`;
+const avatar = size => `<span class="avatar" style="--av:${size}px" aria-hidden="true">${PHOTO ? `<img src="${PHOTO}" alt="">` : esc(P.initials)}</span>`;
+/* ---------- App views ---------- */
+function renderAbout() {
+  const cur = currentRole();
+  return `<div class="pane">
+    <div class="about-head">${avatar(84)}<div>
+      <h3>${esc(P.name)}</h3>
+      <p class="meta">${esc(P.title)} · ${esc(P.location)}</p>
+      <p class="status-line"><span class="dot"></span>${esc(statusLine())}</p>
+    </div></div>
+    <div class="prose">${ABOUT.map(p => `<p>${esc(p)}</p>`).join('')}</div>
+    <dl class="kv">
+      <dt>Based in</dt><dd>${esc(P.location)}</dd>
+      ${cur ? `<dt>Current role</dt><dd>${esc(cur.title)}, ${esc(cur.org)}</dd>` : ''}
+      <dt>Strengths</dt><dd>${esc(P.strengths)}</dd>
+      <dt>Qualification</dt><dd>${esc(P.qualification)}</dd>
+      <dt>Email</dt><dd>${esc(EMAIL)}</dd>
+    </dl>
+    <div class="actions">
+      <button type="button" class="btn primary" data-open="experience">View experience</button>
+      
+      <button type="button" class="btn" data-open="contact">Get in touch</button>
+    </div>
+  </div>`;
+}
+
+function renderExperience() {
+  return `<div class="pane">
+    <p class="lede">${ROLES.length} roles since 2014, newest first. ${tenureLong(totalMonths())} in total.</p>
+    <ol class="timeline">${ROLES.map(r => `
+      <li class="role" id="role-${r.id}">
+        <div class="role-when"><span>${range(r)}</span><span class="tenure${r.end ? '' : ' now'}">${tenure(roleMonths(r))}${r.end ? '' : ' · now'}</span></div>
+        <div>
+          <h3>${esc(r.title)}</h3>
+          <p class="org">${esc(r.org)}${r.place ? ' · ' + esc(r.place) : ''}</p>
+          ${r.summary ? `<p class="role-sum">${esc(r.summary)}</p>` : ''}
+          ${r.points.length ? `<ul class="bullets">${r.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
+        </div>
+      </li>`).join('')}
+    </ol>
+  </div>`;
+}
+
+function renderProjects() {
+  return `<div class="pane">
+    <p class="lede">${esc(DATA.projectsIntro || '')}</p>
+    <div class="cards">${PROJECTS.map(p => `
+      <article class="card">
+        <div class="card-main">
+          <div class="card-top"><span class="pill ${p.done ? 'done' : 'run'}">${esc(p.status || (p.done ? 'Delivered' : 'In progress'))}</span><span class="year mono">${p.year}</span></div>
+          <h3>${esc(p.title)}</h3>
+          <p>${esc(p.summary)}</p>
+        </div>
+        <div class="card-side">
+          <ul class="bullets">${p.points.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+          <ul class="chips" aria-label="Tools and methods">${p.tools.map(t => `<li class="chip">${esc(t)}</li>`).join('')}</ul>
+        </div>
+      </article>`).join('')}
+    </div>
+  </div>`;
+}
+
+function renderSkills() {
+  return `<div class="pane">
+    <p class="lede">The tools and methods I use, grouped by area.</p>
+    <div class="sg-wrap">${SKILLS.map(s => `
+      <section class="sg"><h3 class="sec">${esc(s.group)}</h3>
+        <ul class="chips">${s.items.map(i => `<li class="chip">${esc(i)}</li>`).join('')}</ul>
+      </section>`).join('')}
+    </div>
+  </div>`;
+}
+
+function renderEducation() {
+  const row = e => `<li><span class="yr">${e.year}</span><div><p class="edu-what">${esc(e.what)}</p><p class="org">${esc(e.where)}${e.note ? ' · ' + esc(e.note) : ''}</p></div></li>`;
+  return `<div class="pane">
+    <h3 class="sec">Qualifications</h3><ol class="edu">${EDU.map(row).join('')}</ol>
+    <h3 class="sec">Certifications</h3><ol class="edu">${CERTS.map(row).join('')}</ol>
+  </div>`;
+}
+
+function renderContact() {
+  return `<div class="pane">
+    <div class="contact-card">${avatar(64)}<div><h3>${esc(P.name)}</h3><p class="meta">${esc(P.title)} · ${esc(P.location)}</p></div></div>
+    <div class="c-rows">
+      <div class="c-row"><span class="c-label">Email</span><span class="c-val" id="c-email">${EMAIL}</span><button type="button" class="btn small" data-act="copy-email">${svg('copy')}Copy</button></div>
+      <div class="c-row"><span class="c-label">LinkedIn</span><a class="c-val" href="${LINKEDIN}" target="_blank" rel="noopener noreferrer">${LINKEDIN_LABEL}</a><a class="btn small" href="${LINKEDIN}" target="_blank" rel="noopener noreferrer">Open${svg('arrow')}</a></div>
+      <div class="c-row"><span class="c-label">Local time</span><span class="c-val"><span data-clock>--:--</span> in ${esc(P.city)} (${esc(P.timezoneLabel)})</span><span></span></div>
+    </div>
+    <p class="fine">${esc(P.referencesNote || '')}</p>
+  </div>`;
+}
+
+function renderCV() {
+  const role = r => `<div class="cv-role">
+      <div class="cv-top"><strong>${esc(r.title)}</strong><span class="mono">${range(r)}</span></div>
+      <p class="cv-org">${esc(r.org)}${r.place ? ' · ' + esc(r.place) : ''}</p>
+      ${r.points.length ? `<ul class="bullets">${r.points.slice(0, 3).map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
+    </div>`;
+  const line = e => `<div class="cv-top"><span>${esc(e.what)}, ${esc(e.where)}</span><span class="mono">${e.year}</span></div>`;
+  return `<div class="cv-wrap"><article class="cv">
+    <header class="cv-head"><h3>${esc(P.name)}</h3><p>${esc(P.title)} · ${esc(P.location)}</p>
+      <p class="cv-contact"><span>${EMAIL}</span><span aria-hidden="true">·</span><a href="${LINKEDIN}" target="_blank" rel="noopener noreferrer">${LINKEDIN_LABEL}</a></p></header>
+    <section><h4>Profile</h4><p>${esc(CV_PROFILE)}</p></section>
+    <section><h4>Experience</h4>${ROLES.map(role).join('')}</section>
+    <section><h4>Selected projects</h4><ul class="bullets">${PROJECTS.map(p => `<li><strong>${esc(p.title)}.</strong> ${esc(p.summary)}</li>`).join('')}</ul></section>
+    <section><h4>Education</h4>${EDU.map(line).join('')}<h5>Certifications</h5>${CERTS.map(line).join('')}</section>
+    <section><h4>Skills</h4>${SKILLS.map(s => `<p><strong>${esc(s.group)}:</strong> ${esc(s.items.join(', '))}</p>`).join('')}</section>
+    <p class="fine">${esc(P.referencesNote || '')}</p>
+  </article></div>`;
+}
+
+
+
+const APPS = {
+  about:      { title:'About', w:580, pos:'left', render:renderAbout },
+  experience: { title:'Experience', w:760, render:renderExperience },
+  projects:   { title:'Projects', w:800, render:renderProjects },
+  skills:     { title:'Skills', w:680, render:renderSkills },
+  education:  { title:'Education', w:600, render:renderEducation },
+  
+  cv:         { title:'CV', w:820, render:renderCV },
+  contact:    { title:'Contact', w:520, render:renderContact }
+};
+/* ---------- Wallpaper: Table Mountain from the bay, day or night with the theme ---------- */
+// Silhouette, left to right: Devil's Peak, the flat table, Kloof Nek, Lion's Head, Signal Hill. y = share of the plateau height.
+const SIL = [[-.06,.08],[.02,.13],[.07,.21],[.11,.35],[.145,.54],[.175,.75],[.196,.89],[.206,.93],[.215,.895],[.232,.80],[.255,.835],[.277,.925],[.291,.982],[.300,1],[.37,1],[.45,.994],[.52,1],[.563,.99],[.574,.93],[.589,.84],[.613,.70],[.643,.555],[.673,.44],[.699,.385],[.721,.44],[.741,.55],[.757,.625],[.769,.66],[.780,.632],[.797,.525],[.821,.405],[.849,.335],[.884,.302],[.93,.27],[.975,.185],[1.06,.08]];
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function rgba(hex, a) { let h = hex.replace('#', ''); if (h.length === 3) h = h.split('').map(c => c + c).join(''); const n = parseInt(h, 16); return `rgba(${n >> 16 & 255},${n >> 8 & 255},${n & 255},${a})`; }
+const css = () => { const cs = getComputedStyle(document.documentElement); return n => cs.getPropertyValue(n).trim(); };
+const isNight = () => css()('--night') === '1';
+
+function drawWall() {
+  const cv = $('#wall');
+  const W = cv.clientWidth || innerWidth, H = cv.clientHeight || innerHeight;
+  if (!W || !H) return;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+  const g = cv.getContext('2d');
+  g.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const v = css();
+  const C = { skyTop:v('--sky-top'), skyMid:v('--sky-mid'), skyLow:v('--sky-low'), orb:v('--orb'), far:v('--mount-far'), top:v('--mount-top'), base:v('--mount-base'), cloud:v('--cloud'), city:v('--city'), lights:v('--lights'), seaTop:v('--sea-top'), seaBot:v('--sea-bottom') };
+  const dark = v('--night') === '1';
+  const phone = W < 720;
+  const seaY = Math.round(H * (phone ? .865 : .835));
+  const mH = phone ? Math.min(H * .25, W * .62) : Math.min(H * .36, W * .21);
+  const x0 = phone ? .10 : -.02, x1 = phone ? .87 : 1.02;
+  const X = x => (x - x0) / (x1 - x0) * W;
+  const R = rng(20261026);
+  let gr;
+
+  // Sky
+  gr = g.createLinearGradient(0, 0, 0, seaY);
+  gr.addColorStop(0, C.skyTop); gr.addColorStop(.62, C.skyMid); gr.addColorStop(1, C.skyLow);
+  g.fillStyle = gr; g.fillRect(0, 0, W, seaY + 2);
+
+  // Stars
+  if (dark) {
+    const n = Math.min(520, Math.round(W * H / 2400));
+    for (let i = 0; i < n; i++) {
+      const x = R() * W, y = Math.pow(R(), 1.4) * seaY * .82, r = R() < .93 ? .45 + R() * .6 : 1 + R() * .7;
+      g.fillStyle = rgba(C.orb, .25 + R() * .65); g.beginPath(); g.arc(x, y, r, 0, 7); g.fill();
+    }
+  }
+
+  // Sun or moon
+  const ox = W * (phone ? .80 : .79), oy = H * (phone ? .47 : .19), oR = Math.max(16, Math.min(W, H) * (phone ? .05 : .042));
+  gr = g.createRadialGradient(ox, oy, 0, ox, oy, oR * (dark ? 5 : 7));
+  gr.addColorStop(0, rgba(C.orb, dark ? .28 : .75)); gr.addColorStop(1, rgba(C.orb, 0));
+  g.fillStyle = gr; g.fillRect(0, 0, W, seaY);
+  g.fillStyle = rgba(C.orb, dark ? .95 : .9); g.beginPath(); g.arc(ox, oy, oR, 0, 7); g.fill();
+  if (dark) { g.fillStyle = rgba(C.skyMid, .12); [[-.3,-.2,.22],[.25,.15,.16],[-.05,.35,.12]].forEach(([a, b, c]) => { g.beginPath(); g.arc(ox + a * oR, oy + b * oR, c * oR, 0, 7); g.fill(); }); }
+
+  // Far ridge behind the mountain
+  g.fillStyle = C.far; g.beginPath(); g.moveTo(0, seaY);
+  for (let x = 0; x <= W + 6; x += 6) { const u = x / W; const h = .30 + .09 * Math.sin(u * 7.1 + .6) + .05 * Math.sin(u * 17.3 + 2.1) + .025 * Math.sin(u * 41 + 1); g.lineTo(x, seaY - h * mH * .95); }
+  g.lineTo(W, seaY); g.closePath(); g.fill();
+
+  // Main mountain
+  const pts = [];
+  for (let i = 0; i < SIL.length - 1; i++) {
+    const [ax, ay] = SIL[i], [bx, by] = SIL[i + 1];
+    const px0 = X(ax), px1 = X(bx), steps = Math.max(1, Math.ceil(Math.abs(px1 - px0) / 5));
+    const flat = ay >= .98 && by >= .98;
+    for (let s = 0; s < steps; s++) { const t = s / steps; const y = ay + (by - ay) * t + (R() - .5) * (flat ? .006 : .022); pts.push([px0 + (px1 - px0) * t, seaY - y * mH]); }
+  }
+  const last = SIL[SIL.length - 1]; pts.push([X(last[0]), seaY - last[1] * mH]);
+  const mtn = new Path2D(); mtn.moveTo(pts[0][0], seaY + 2); pts.forEach(([x, y]) => mtn.lineTo(x, y)); mtn.lineTo(pts[pts.length - 1][0], seaY + 2); mtn.closePath();
+  gr = g.createLinearGradient(0, seaY - mH, 0, seaY); gr.addColorStop(0, C.top); gr.addColorStop(1, C.base);
+  g.fillStyle = gr; g.fill(mtn);
+
+  // Faint sandstone layers on the cliff face
+  g.save(); g.clip(mtn); g.lineWidth = 1;
+  g.strokeStyle = rgba(C.cloud, dark ? .03 : .06);
+  for (let k = 0; k < 4; k++) { const y = seaY - mH * (.93 - k * .06); g.beginPath(); g.moveTo(X(.28), y + (R() - .5) * 2); g.lineTo(X(.59), y + (R() - .5) * 2); g.stroke(); }
+  g.restore();
+
+  // The tablecloth: cloud resting on the plateau and tumbling a little way down the face
+  const pL = X(.29), pR = X(.575), topY = seaY - mH;
+  const puff = (cx, cy, rx, sy, a) => {
+    g.save(); g.translate(cx, cy); g.scale(1, sy);
+    gr = g.createRadialGradient(0, 0, 0, 0, 0, rx); gr.addColorStop(0, rgba(C.cloud, a)); gr.addColorStop(1, rgba(C.cloud, 0));
+    g.fillStyle = gr; g.beginPath(); g.arc(0, 0, rx, 0, 7); g.fill(); g.restore();
+  };
+  for (let i = 0; i <= 26; i++) puff(pL + (pR - pL) * (i / 26) + (R() - .5) * 10, topY - mH * (.015 + R() * .05), mH * (.07 + R() * .07), .55, dark ? .45 : .95);
+  for (let i = 0; i < 22; i++) { const d = R(); puff(pL + 4 + R() * (pR - pL - 8), topY + mH * (.02 + d * .16), mH * (.05 + R() * .05) * (1 - d * .4), .7, (dark ? .22 : .5) * (1 - d * .7)); }
+
+  // City at the foot of the mountain
+  const B = rng(77), lights = [];
+  g.fillStyle = C.city;
+  for (let x = X(.02), end = X(.98); x < end;) {
+    const bw = 3 + B() * (phone ? 6 : 9), near = Math.exp(-Math.pow(((x / W) - .45) / .22, 2));
+    const bh = (2 + B() * (phone ? 6 : 12)) * (.35 + near);
+    g.fillRect(x, seaY - bh, bw, bh + 1);
+    if (dark) { const nL = Math.floor(B() * 3 * (.4 + near)); for (let k = 0; k < nL; k++) lights.push([x + B() * bw, seaY - B() * bh]); }
+    x += bw + B() * 2;
+  }
+  if (dark) {
+    gr = g.createLinearGradient(0, seaY - mH * .35, 0, seaY); gr.addColorStop(0, rgba(C.lights, 0)); gr.addColorStop(1, rgba(C.lights, .10));
+    g.fillStyle = gr; g.fillRect(0, seaY - mH * .35, W, mH * .35);
+    lights.forEach(([lx, ly]) => { g.fillStyle = rgba(C.lights, .55 + B() * .45); g.fillRect(lx, ly, 1.3, 1.3); });
+  }
+
+  // Sea
+  gr = g.createLinearGradient(0, seaY, 0, H); gr.addColorStop(0, C.seaTop); gr.addColorStop(1, C.seaBot);
+  g.fillStyle = gr; g.fillRect(0, seaY, W, H - seaY);
+  const S = rng(5);
+  if (dark) {
+    lights.forEach(([lx]) => { if (S() < .5) return; const len = 6 + S() * 28; gr = g.createLinearGradient(0, seaY, 0, seaY + len); gr.addColorStop(0, rgba(C.lights, .35)); gr.addColorStop(1, rgba(C.lights, 0)); g.fillStyle = gr; g.fillRect(lx, seaY + 1, 1.2, len); });
+  } else {
+    g.lineWidth = 1;
+    for (let i = 0; i < 70; i++) { const y = seaY + 3 + Math.pow(S(), 1.6) * (H - seaY - 6), len = 8 + S() * 50, x = S() * W; g.strokeStyle = rgba(C.cloud, .10 + S() * .18); g.beginPath(); g.moveTo(x, y); g.lineTo(x + len, y); g.stroke(); }
+  }
+  gr = g.createLinearGradient(0, seaY, 0, H); gr.addColorStop(0, rgba(C.orb, dark ? .18 : .28)); gr.addColorStop(1, rgba(C.orb, 0));
+  g.fillStyle = gr; g.fillRect(ox - oR * 1.2, seaY, oR * 2.4, H - seaY);
+  g.fillStyle = rgba(C.cloud, dark ? .06 : .25); g.fillRect(0, seaY, W, 1);
+}
+let wallRaf = 0;
+const scheduleWall = () => { cancelAnimationFrame(wallRaf); wallRaf = requestAnimationFrame(drawWall); };
+/* ---------- Windows ---------- */
+const os = $('#os'), lockEl = $('#lock'), winLayer = $('#windows');
+const wins = new Map();
+let zTop = 30, cascade = 0, locked = true;
+
+function area() {
+  if (isPhone()) return { x:0, y:0, w:innerWidth, h:innerHeight };
+  const top = $('#menubar').getBoundingClientRect().bottom;
+  const dockTop = $('.dock-in').getBoundingClientRect().top;
+  return { x:0, y:top, w:innerWidth, h:Math.max(220, dockTop - top - 10) };
+}
+const visible = () => [...wins.values()].filter(w => !w.el.hidden && !w.el.classList.contains('closing'));
+const topWin = except => visible().filter(w => w.id !== except).sort((a, b) => (+b.el.style.zIndex || 0) - (+a.el.style.zIndex || 0))[0];
+
+function sync() {
+  const open = new Set(visible().map(w => w.id));
+  $$('.dock-item[data-open]').forEach(d => d.classList.toggle('open', open.has(d.dataset.open)));
+  const f = topWin();
+  $('#mb-app').textContent = f ? f.app.title : 'Desktop';
+}
+
+function front(w) {
+  if (!w.el.classList.contains('front') || +w.el.style.zIndex !== zTop) { zTop += 1; w.el.style.zIndex = zTop; }
+  wins.forEach(o => o.el.classList.toggle('front', o === w));
+  sync();
+}
+
+function place(w) {
+  if (isPhone()) return;
+  const a = area(), app = w.app;
+  const W = Math.min(app.w, a.w - 32), maxH = a.h - 20;
+  w.el.style.width = W + 'px';
+  w.el.style.maxHeight = maxH + 'px';
+  w.el.style.height = app.h ? Math.min(app.h, maxH) + 'px' : '';
+  if (w.placed) return clampWin(w);
+  const H = Math.min(w.el.offsetHeight || 480, maxH);
+  const margin = Math.max(16, a.w * .06);
+  let x, y;
+  if (app.pos === 'left') { x = margin; y = a.y + 22; }
+  else if (app.pos === 'right') { x = a.w - W - 120; y = a.y + 64; }
+  else { const n = cascade++ % 5; x = (a.w - W) / 2 + (n - 2) * 26; y = a.y + 18 + n * 22; }
+  w.el.style.left = Math.round(Math.max(12, Math.min(x, a.w - W - 12))) + 'px';
+  w.el.style.top = Math.round(Math.max(a.y + 8, Math.min(y, a.y + a.h - H))) + 'px';
+  w.placed = true;
+}
+
+function clampWin(w) {
+  if (isPhone() || w.el.hidden) return;
+  const a = area();
+  if (w.max) { Object.assign(w.el.style, { left:'12px', top:(a.y + 8) + 'px', width:(a.w - 24) + 'px', height:(a.h - 20) + 'px', maxHeight:(a.h - 20) + 'px' }); return; }
+  const W = Math.min(w.app.w, a.w - 32);
+  w.el.style.width = W + 'px';
+  w.el.style.maxHeight = (a.h - 20) + 'px';
+  if (w.app.h) w.el.style.height = Math.min(w.app.h, a.h - 20) + 'px';
+  const x = Math.min(Math.max(12, w.el.offsetLeft), Math.max(12, a.w - W - 12));
+  const y = Math.min(Math.max(a.y + 8, w.el.offsetTop), a.y + a.h - 50);
+  w.el.style.left = x + 'px'; w.el.style.top = y + 'px';
+}
+
+function toggleMax(w) {
+  if (isPhone()) return;
+  if (w.max) { w.max = false; w.el.classList.remove('max'); Object.assign(w.el.style, w.prev); clampWin(w); }
+  else { w.prev = { left:w.el.style.left, top:w.el.style.top, width:w.el.style.width, height:w.el.style.height }; w.max = true; w.el.classList.add('max'); clampWin(w); }
+}
+
+function createWin(id) {
+  const app = APPS[id];
+  const el = document.createElement('section');
+  el.className = 'win'; el.dataset.app = id; el.hidden = true;
+  el.setAttribute('role', 'dialog'); el.setAttribute('aria-modal', 'false'); el.setAttribute('aria-labelledby', 'wt-' + id);
+  el.innerHTML = `<header class="win-bar">
+      <button type="button" class="win-back">${svg('back')}<span>Home</span></button>
+      ${tile(id)}
+      <h2 class="win-title" id="wt-${id}" tabindex="-1">${esc(app.title)}</h2>
+      <div class="win-ctrl">
+        <button type="button" class="maxb" aria-label="Maximise ${esc(app.title)}">${svg('max')}</button>
+        <button type="button" class="close" aria-label="Close ${esc(app.title)}">${svg('close')}</button>
+      </div>
+    </header>
+    <div class="win-body">${app.render()}</div>`;
+  winLayer.appendChild(el);
+  const w = { id, el, app, placed:false, max:false, timers:[] };
+  wins.set(id, w);
+  $('.close', el).addEventListener('click', () => closeApp(id));
+  $('.win-back', el).addEventListener('click', () => closeApp(id));
+  $('.maxb', el).addEventListener('click', () => toggleMax(w));
+  el.addEventListener('pointerdown', () => front(w), true);
+  el.addEventListener('focusin', () => { if (!el.classList.contains('front')) front(w); });
+  const bar = $('.win-bar', el);
+  bar.addEventListener('dblclick', e => { if (!e.target.closest('button')) toggleMax(w); });
+  bar.addEventListener('pointerdown', e => {
+    if (isPhone() || w.max || e.button !== 0 || e.target.closest('button')) return;
+    const r = el.getBoundingClientRect(), ox = e.clientX - r.left, oy = e.clientY - r.top;
+    bar.setPointerCapture(e.pointerId);
+    const move = ev => {
+      const a = area();
+      const x = Math.min(Math.max(ev.clientX - ox, 80 - r.width), a.w - 80);
+      const y = Math.min(Math.max(ev.clientY - oy, a.y), a.y + a.h - 42);
+      el.style.left = Math.round(x) + 'px'; el.style.top = Math.round(y) + 'px';
+    };
+    const up = () => { bar.removeEventListener('pointermove', move); bar.removeEventListener('pointerup', up); bar.removeEventListener('pointercancel', up); };
+    bar.addEventListener('pointermove', move); bar.addEventListener('pointerup', up); bar.addEventListener('pointercancel', up);
+  });
+  tick(true);
+  return w;
+}
+
+function openApp(id, opts = {}) {
+  if (!APPS[id]) return;
+  
+  if (locked) { unlock(Object.assign({}, opts, { open:id })); return; }
+  const w = wins.get(id) || createWin(id);
+  if (isPhone()) visible().forEach(o => { if (o !== w) closeApp(o.id, { instant:true, keepFocus:true }); });
+  if (w.el.hidden || w.el.classList.contains('closing')) {
+    clearTimeout(w.hideT);
+    w.el.classList.remove('closing');
+    w.el.hidden = false;
+    place(w);
+    if (motion()) { w.el.classList.remove('opening'); void w.el.offsetWidth; w.el.classList.add('opening'); }
+    if (w.app.onOpen) w.app.onOpen(w);
+    w.returnTo = opts.from || null;
+  }
+  front(w);
+  if (opts.scroll) {
+    const t = w.el.querySelector('#' + CSS.escape(opts.scroll));
+    if (t) requestAnimationFrame(() => { t.scrollIntoView({ block:'start', behavior: motion() ? 'smooth' : 'auto' }); t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash'); });
+  }
+  if (!opts.background) $('.win-title', w.el).focus({ preventScroll:true });
+}
+
+function closeApp(id, opts = {}) {
+  const w = wins.get(id);
+  if (!w || w.el.hidden) return;
+  if (w.app.onClose) w.app.onClose(w);
+  const done = () => { w.el.hidden = true; w.el.classList.remove('closing', 'opening', 'front'); sync(); };
+  if (opts.instant || !motion()) done();
+  else { w.el.classList.remove('opening'); w.el.classList.add('closing'); w.hideT = setTimeout(done, isPhone() ? 190 : 130); }
+  sync();
+  if (opts.keepFocus) return;
+  const next = topWin(id);
+  if (next) { front(next); $('.win-title', next.el).focus({ preventScroll:true }); }
+  else if (w.returnTo && document.contains(w.returnTo) && w.returnTo.getClientRects().length) w.returnTo.focus({ preventScroll:true });
+}
+/* ---------- Lock screen ---------- */
+function setInert(on) { $$('.ui').forEach(el => { el.inert = on; }); lockEl.inert = !on; }
+
+function unlock(opts = {}) {
+  if (!locked) { if (opts.open) openApp(opts.open, opts); return; }
+  locked = false;
+  os.classList.remove('locked');
+  lockEl.classList.add('gone');
+  lockEl.setAttribute('aria-hidden', 'true');
+  setInert(false);
+  setTimeout(() => { if (!locked) lockEl.hidden = true; }, motion() ? 520 : 0);
+  if (opts.open) { openApp(opts.open, opts); return; }
+  if (!isPhone()) {
+    
+    openApp('about');
+  } else {
+    const wdg = $('#home .widget'); if (wdg) wdg.focus({ preventScroll:true });
+  }
+}
+
+function lockNow() {
+  locked = true;
+  lockEl.hidden = false;
+  void lockEl.offsetWidth;
+  lockEl.classList.remove('gone');
+  lockEl.removeAttribute('aria-hidden');
+  os.classList.add('locked');
+  setInert(true);
+  $('#unlock').focus({ preventScroll:true });
+}
+
+(() => {
+  let sy = null, dy = 0, t0 = 0, moved = false;
+  const reset = () => { lockEl.style.transition = ''; lockEl.style.transform = ''; lockEl.style.opacity = ''; };
+  lockEl.addEventListener('pointerdown', e => {
+    if (!locked || e.target.closest('button, a') || (e.pointerType === 'mouse' && e.button !== 0)) return;
+    sy = e.clientY; dy = 0; t0 = performance.now(); moved = false;
+    lockEl.setPointerCapture(e.pointerId);
+    lockEl.style.transition = 'none';
+  });
+  lockEl.addEventListener('pointermove', e => {
+    if (sy === null) return;
+    const d = e.clientY - sy;
+    if (Math.abs(d) > 6) moved = true;
+    dy = Math.min(0, d);
+    lockEl.style.transform = `translateY(${dy}px)`;
+    lockEl.style.opacity = String(Math.max(.2, 1 + dy / 500));
+  });
+  const end = cancelled => {
+    if (sy === null) return;
+    const speed = dy / Math.max(1, performance.now() - t0);
+    sy = null; reset();
+    if (!cancelled && (!moved || dy < -90 || speed < -.6)) unlock();
+  };
+  lockEl.addEventListener('pointerup', () => end(false));
+  lockEl.addEventListener('pointercancel', () => end(true));
+})();
+
+/* ---------- Clock ---------- */
+const fmtClock = new Intl.DateTimeFormat('en-GB', { hour:'2-digit', minute:'2-digit', hourCycle:'h23', timeZone:TZ });
+const fmtDate = new Intl.DateTimeFormat('en-GB', { weekday:'long', day:'numeric', month:'long', timeZone:TZ });
+const fmtBar = new Intl.DateTimeFormat('en-GB', { weekday:'short', day:'numeric', month:'short', timeZone:TZ });
+let lastClock = '';
+function tick(force) {
+  const d = new Date(), t = fmtClock.format(d);
+  if (!force && t === lastClock) return;
+  lastClock = t;
+  $$('[data-clock]').forEach(e => { e.textContent = t; });
+  $$('[data-date]').forEach(e => { e.textContent = fmtDate.format(d); });
+  $$('[data-bar]').forEach(e => { e.textContent = fmtBar.format(d) + '  ' + t; });
+}
+
+/* ---------- Theme ---------- */
+const THEME_KEY = 'anele-os-theme';
+function syncThemeButtons() {
+  const n = isNight();
+  $$('.theme-btn').forEach(b => { b.innerHTML = svg(n ? 'sun' : 'moon'); b.setAttribute('aria-label', n ? 'Switch to day' : 'Switch to night'); });
+}
+function toggleTheme() {
+  const next = isNight() ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+}
+try { const saved = localStorage.getItem(THEME_KEY); if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved); } catch (e) {}
+new MutationObserver(() => { syncThemeButtons(); scheduleWall(); }).observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
+const darkMQ = matchMedia('(prefers-color-scheme: dark)');
+const onScheme = () => { syncThemeButtons(); scheduleWall(); };
+if (darkMQ.addEventListener) darkMQ.addEventListener('change', onScheme); else if (darkMQ.addListener) darkMQ.addListener(onScheme);
+
+/* ---------- Copy email and toast ---------- */
+let toastT = 0;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2600); }
+async function copyEmail() {
+  try { await navigator.clipboard.writeText(EMAIL); toast('Email address copied'); }
+  catch (err) {
+    openApp('contact');
+    const v = $('#c-email');
+    if (v) { const r = document.createRange(); r.selectNodeContents(v); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+    toast('Copying is blocked here. The address is selected for you.');
+  }
+}
+
+/* ---------- Events ---------- */
+document.addEventListener('click', e => {
+  const opener = e.target.closest('[data-open]');
+  if (opener) { e.preventDefault(); openApp(opener.dataset.open, { scroll:opener.dataset.scroll, from:opener }); return; }
+  const act = e.target.closest('[data-act]');
+  if (!act) return;
+  const a = act.dataset.act;
+  if (a === 'theme') toggleTheme();
+  else if (a === 'copy-email') copyEmail();
+  else if (a === 'lock') lockNow();
+  else if (a === 'unlock') unlock();
+  
+});
+document.addEventListener('keydown', e => {
+  if (locked) {
+    const onControl = e.target.closest && e.target.closest('button, a');
+    if (!onControl && (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowUp')) { e.preventDefault(); unlock(); }
+    return;
+  }
+  if (e.key === 'Escape') { const f = topWin(); if (f) { e.preventDefault(); closeApp(f.id); } }
+});
+let lastPhone = isPhone();
+addEventListener('resize', () => {
+  scheduleWall();
+  const p = isPhone();
+  if (p !== lastPhone) {
+    lastPhone = p;
+    if (p) { const f = topWin(); visible().forEach(w => { if (w !== f) closeApp(w.id, { instant:true, keepFocus:true }); }); }
+    else wins.forEach(w => { w.placed = false; w.max = false; w.el.classList.remove('max'); if (!w.el.hidden) place(w); });
+  } else wins.forEach(clampWin);
+});
+
+/* ---------- Start ---------- */
+function renderLockNotes() {
+  const hl = DATA.highlights || [];
+  const notes = [hl[0]];
+  
+  notes.push(...hl.slice(1), { open:'contact', label:'Contact', when:'Today', title:EMAIL, text:'Email, or connect on LinkedIn.' });
+  $('#lock-notes').innerHTML = notes.filter(Boolean).map(n => `<li><button type="button" class="note" data-open="${esc(n.open)}"${n.scroll ? ` data-scroll="${esc(n.scroll)}"` : ''}>${tile(ICON[n.open] ? n.open : 'about')}<span class="note-main"><span class="note-top"><span>${esc(n.label)}</span><span>${esc(n.when)}</span></span><span class="note-title">${esc(n.title)}</span><span class="note-text">${esc(n.text)}</span></span></button></li>`).join('');
+}
+function bindText() {
+  const cur = currentRole();
+  const values = {
+    name: P.name,
+    initials: P.initials,
+    city: P.city,
+    cityTz: `${P.city} · ${P.timezoneShort}`,
+    titleCity: `${P.title} · ${P.city}`,
+    roleAtOrg: cur ? `${cur.title} · ${cur.org}` : P.title
+  };
+  $$('[data-bind]').forEach(el => { const v = values[el.dataset.bind]; if (v != null) el.textContent = v; });
+  $$('[data-link="linkedin"]').forEach(a => { a.href = LINKEDIN; });
+}
+renderLockNotes();
+bindText();
+
+$$('[data-icon]').forEach(el => { el.innerHTML = svg(el.dataset.icon); });
+$$('[data-avatar]').forEach(el => { el.innerHTML = PHOTO ? `<img src="${PHOTO}" alt="">` : esc(P.initials); });
+syncThemeButtons();
+tick(true);
+setInterval(tick, 1000);
+setInert(true);
+drawWall();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { tick(true); });
+
+const start = (location.hash || '').slice(1).toLowerCase();
+if (APPS[start]) {
+  lockEl.style.transition = 'none';
+  unlock({ open:start });
+  lockEl.hidden = true;
+  requestAnimationFrame(() => { lockEl.style.transition = ''; });
+}
+})();
+</script>
+
+</body>
+</html>
